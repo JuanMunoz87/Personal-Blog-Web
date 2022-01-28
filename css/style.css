@@ -14,10 +14,11 @@ header {
 }
 
 /* images */
-img {
+img, figcaption{
    display: block;
    width: 200px;
    margin: 0 auto;
+
 
 }
 
@@ -31,7 +32,8 @@ h2, a {
    justify-content: center;
 }
 
-.headling-info {
+.headling-info p {
+   text-align: center;
    width: 760px;
 }
 
