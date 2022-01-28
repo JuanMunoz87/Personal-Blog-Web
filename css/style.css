@@ -1,9 +1,10 @@
-.header {
+header {
    background-color: #9ff0f0;
    display: flex;
    justify-content: center;
    align-items: center;
 }
+
 /* Headline row */
 .headline {
    background-color: #d9ecec;
@@ -35,21 +36,12 @@ h2, a {
 }
 
 /* blogs */
-.blogs {
+section {
    padding: 100px;
-   /* margin: 0 auto;
-   width: 1200px; */
-
-   /* display: grid;
-   justify-content: center;
-   grid-template-columns: repeat(3, 300px);
-   grid-template-rows: repeat(1, 100px);
-   grid-gap: 10px;  */
 }
 
-
 /* footer */
-.footer {
+footer {
    margin-top: 100px;
    background-color: #376b6b;
    color: azure;
@@ -60,10 +52,10 @@ h2, a {
 }
 
 
-/* media query */
+/* media device */
 @media all and (min-width:800px) {
-    .blogs {
-       display: grid;
+    section {
+      display: grid;
       justify-content: center;
       grid-template-columns: repeat(3, 300px);
       grid-template-rows: repeat(1, 100px);

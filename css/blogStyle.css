@@ -1,93 +1,55 @@
-
-.box {
-   background-color: rgb(95, 158, 160);
- 
-   padding: 0 30px;
-   color: rgb(0, 0, 0);
-}
-
-/* link to go back to the main page of the blog */
-a {
-   display: inline-block;
-   margin: 10px;
-}
-
- h1, p {
+section {
    display: flex;
    justify-content: center;
-} 
+}
+article {
+   padding: 40px;
+}
 
-/* header grid */
-.header {
+header {
    background-color: #9ff0f0;
    grid-area: header;
 }
 
-/***** all the main content blogs grids*****/
-.content1 {
+article {
    background-color: #d9ecec;
-   grid-area: content1;
+   grid-area: article;
 }
 
-.content2 {
+aside {
    background-color: #d9ecec;
-   grid-area: content2;
+   grid-area: aside;
 }
 
-.content-2 {
-   background-color: #d9ecec;
-   grid-area: content-2;
-}
 
-.content3 {
-   background-color: #d9ecec;
-   grid-area: content3;
-}
-
-.content-3 {
-   background-color: #d9ecec;
-   grid-area: content-3;
-}
-
-/* side bars grids */
-.side1 {
-   background-color: #d9ecec;
-   grid-area: side1;
-}
-
-.side2 {
-   background-color: #d9ecec;
-   grid-area: side2;
-}
-
-/* footer grid */
-.footer {
+footer {
    background-color: #376b6b;
    grid-area: footer;
-}
+} 
 
 .container {
-   margin: 0 200px;
+   height: 100vh;
    display: grid;
-   justify-content: center;
+   grid-template-columns: 70% 200px;
+   grid-template-rows: 80px auto 80px;
    grid-template-areas: 
-   "header"
-   "content1"
-   "content2"
-   "content3"
-   "side1"
-   "footer";
+   "header header"
+   "article aside"
+   "footer footer";
+   text-align: center;
 }
 
-@media only screen and (min-width: 900px) {
+/* mobile device  */
+@media only screen and (max-width: 550px) {
    .container {
       grid-template-columns: 70% 200px;
       grid-template-areas: 
-      "header header"
-      "content1 side1"
-      "content2 content-2"
-      "content3 content-3"
-      "footer footer";
+      "header"
+      "article"
+      "content2"
+      "aside"
+      "footer";
    }
-} 
+}  
+
 
