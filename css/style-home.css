@@ -10,12 +10,17 @@
    1fr;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
    .wrapper-blogs {
       grid: 
       "article1 article2 article3"
       / 1fr 1fr 1fr;
    }
+
+   body {
+      font-size: 1.125rem;
+   }
+ 
 } 
 
 .blog1 {

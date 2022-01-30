@@ -1,66 +1,42 @@
+/******************* Responsive Blog Page ************************/
 
-/* 
-section {
-   display: flex;
-   justify-content: center;
-   text-align: center;
-}
+/*** IMPORT ***/
+@import "blog-color.css";
 
-article {
-   padding: 40px;
-   background-color: #d9ecec;
-   grid-area: article;
+
+.container {
+   display: grid;
+   grid: 
+   "header"
+   "main"
+   "aside"
+   "footer"
+   / 1fr;
+} 
+
+@media all and (min-width: 768px) {
+   
+   .container {
+      grid: 
+      "header header"
+      "main aside"
+      "footer footer"
+      / 1fr 30%;
+   }
 }
 
 header {
-   background-color: #9ff0f0;
    grid-area: header;
 }
 
-
-aside h3 {
-   display: flex;
-   justify-content: center;
+main {
+   grid-area: main;
 }
-.social-media-logos {
-   display: flex;
-   justify-content: center;
-}
-
 
 aside {
-   background-color: #d9ecec;
    grid-area: aside;
 }
 
-
 footer {
-   background-color: #376b6b;
    grid-area: footer;
-} 
-
-.container {
-   height: 100vh;
-   display: grid;
-   grid-template-columns: 800px 200px;
-   grid-template-rows: 80px auto 80px;
-   grid-template-areas: 
-   "header header"
-   "article aside"
-   "footer footer";
-}   
-
-
-@media only screen and (max-width: 768px) { 
-   .container {
-      display: grid;
-      grid-template-columns: 700px;
-      grid-template-rows: auto auto auto auto ;
-      grid-template-areas: 
-      "header"
-      "article"
-      "aside"
-      "footer";
-   } 
-}    
- */
+}

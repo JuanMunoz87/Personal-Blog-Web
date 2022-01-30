@@ -1,6 +1,6 @@
 body {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 1.5em;
+   
 }
 
 header {
@@ -40,6 +40,7 @@ nav .nav-content button a {
 
 section {
    padding: 25px;
+   line-height: 1.6;
 }
 section article h3 {
    text-align: center;
@@ -53,6 +54,5 @@ footer {
    background-color: #376b6b;
    color: azure;
    text-align: center;
-   padding: 20px;
+   padding: 5px 0;
 }
-
