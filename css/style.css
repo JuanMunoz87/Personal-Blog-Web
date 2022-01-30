@@ -1,66 +1,32 @@
-header {
-   background-color: #9ff0f0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+/*** IMPORTS ***/
+@import "style-color.css";
+
+.wrapper-blogs {
+   display: grid; 
+   grid: 
+   "article1"
+   "article2"
+   "article3" /
+   1fr;
 }
 
-/* Headline row */
-.headline {
-   background-color: #d9ecec;
-   padding: 60px 45px;
-   display: flex;
-   justify-content: center;
-}
-
-/* images */
-img, figcaption{
-   display: block;
-   width: 200px;
-   margin: 0 auto;
-
-
-}
-
-.headline p {
-   line-height: 1.5;
-}
-
-
-h2, a {
-   display: flex;
-   justify-content: center;
-}
-
-.headling-info p {
-   text-align: center;
-   width: 760px;
-}
-
-/* blogs */
-section {
-   padding: 100px;
-}
-
-/* footer */
-footer {
-   margin-top: 100px;
-   background-color: #376b6b;
-   color: azure;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 80px;
-}
-
-
-/* media device */
-@media all and (min-width:800px) {
-    section {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(3, 300px);
-      grid-template-rows: repeat(1, 100px);
-      grid-gap: 10px;  
-   } 
+@media all and (min-width: 600px) {
+   .wrapper-blogs {
+      grid: 
+      "article1 article2 article3"
+      / 1fr 1fr 1fr;
+   }
 } 
+
+.blog1 {
+   grid-area: article1;
+}
+
+.blog2 {
+   grid-area: article2;
+}
+
+.blog3 {
+   grid-area: article3;
+}
+
