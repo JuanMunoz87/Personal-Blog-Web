@@ -1,9 +1,11 @@
-/******************* Responsive Blog Page ************************/
+/************************************************************/
+/* ****************** Responsive Blog page ******************/
+/************************************************************/
 
 /*** IMPORT ***/
 @import "blog-color.css";
 
-
+/*** mobile responsive ***/
 .container {
    display: grid;
    grid: 
@@ -14,6 +16,7 @@
    / 1fr;
 } 
 
+/*** full screen and tables responsive ***/
 @media all and (min-width: 768px) {
    
    .container {
@@ -22,6 +25,9 @@
       "main aside"
       "footer footer"
       / 1fr 30%;
+   }
+   section {
+      font-size: 1.125rem;
    }
 }
 

@@ -1,14 +1,25 @@
-body {
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
+/************************************************************/
+/* *************** Style of the home page ***************/
+/************************************************************/
+
+/*** Import font ***/
+@font-face {
+   src: url(/fonts/Bangers-Regular.ttf);
+   font-family: Bangers;
 }
 
+body {
+   font-family: Bangers;
+}
+
+/*** Page's name ***/
 header {
    background-color: #9ff0f0;
    display: flex;
    justify-content: center;
 }
 
+/*** Navigation var  ***/
 nav {
    background-color: #d9ecec; 
    padding: 20px;
@@ -38,6 +49,7 @@ nav .nav-content button a {
    color: cornsilk;
 }
 
+/*** Main content of the page ***/
 section {
    padding: 25px;
    line-height: 1.6;
@@ -50,6 +62,7 @@ section .box {
    padding: 5px;
 }
 
+/*** footer ***/
 footer {
    background-color: #376b6b;
    color: azure;

@@ -1,6 +1,11 @@
+/************************************************************/
+/* ****************** Responsive home page ******************/
+/************************************************************/
+
 /*** IMPORTS ***/
 @import "style-color.css";
 
+/*** responsive mobile ***/
 .wrapper-blogs {
    display: grid; 
    grid: 
@@ -10,6 +15,7 @@
    1fr;
 }
 
+/*** full screen and table responsiveness ***/
 @media all and (min-width: 768px) {
    .wrapper-blogs {
       grid: 

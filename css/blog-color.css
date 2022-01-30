@@ -1,19 +1,33 @@
-
-section {
-
+/******************* Blog page - color, text and sizes ******************/
+/*** Import font ***/
+@font-face {
+   src: url(/fonts/Bangers-Regular.ttf);
+   font-family: Bangers;
 }
 
+body {
+   font-family: Bangers;
+}
+
+/*** The container that holds all the content of the page ***/
+section {
+   line-height: 1.6;
+}
+
+/*** header - the title of the page ***/
 header {
    background-color: #9ff0f0;
    display: flex;
    justify-content: center;
 }
 
+/*** Wrapper of the articles ***/
 main {
    background-color: #d9ecec;
    padding: 10px;
 }
 
+/* articles */
 article {
    padding: 20px;
 }
@@ -34,6 +48,7 @@ main button a {
    color: cornsilk;
 }
 
+/*** aside ***/
 aside {
    background-color: #d9ecec;
    text-align: center;
@@ -45,6 +60,7 @@ aside {
    text-align: center;
 }
 
+/*** footer ***/
 footer {
    background-color: #376b6b;
    color: azure;
